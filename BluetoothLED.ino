@@ -17,7 +17,7 @@ String getMessage(){
   
   while(Bluetooth.available()) {
       m = Bluetooth.read();
-      msg+=String(a);
+      msg+=String(m);
   }
   return msg;
 }
