@@ -24,7 +24,7 @@ String getMessage(){
  
 void loop()
 {
-    // Check if a message has been received
+    // Verifique si se recibió un mensaje
     String msg = getMessage();
     if(msg!=""){
       if(msg == "encender"){
@@ -33,7 +33,7 @@ void loop()
         delay(100);
       }
       if(msg == "apagar"){
-        digitalWrite(ledPIN , LOW);   // poner el Pin en HIGH
+        digitalWrite(ledPIN , LOW);   // poner el Pin en LOW
         Bluetooth.println("LED apagada");
         delay(100);
       }
