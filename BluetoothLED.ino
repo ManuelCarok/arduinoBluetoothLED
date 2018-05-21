@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
  
-// Initializing communication ports
+// Inicializando puertos de comunicación
 SoftwareSerial Bluetooth(11, 10); // TX/RX pins
 
 const int ledPIN = 9;
@@ -17,7 +17,7 @@ String getMessage(){
   
   while(Bluetooth.available()) {
       m = Bluetooth.read();
-      msg+=String(a);
+      msg+=String(m);
   }
   return msg;
 }
